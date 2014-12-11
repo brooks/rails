@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 *   Fix `rake db:structure:dump` on Postgres when multiple schemas are used.
+=======
+*   Improve a dump of the primary key support. If it is not a default primary key,
+    correctly dump the type and options.
+
+    Fixes #14169, #16599.
+
+    *Ryuta Kamizono*
+
+*   Provide `:touch` option to `save()` to accommodate saving without updating
+    timestamps.
+>>>>>>> 3628025... Improve a dump of the primary key support.
 
     Fixes #22346.
 
